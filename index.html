@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burç API Dokümantasyonu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="color: white">🔮 Burç API Dokümantasyonu</h1>
+      <p>Günlük, Haftalık ve Özellik API uç noktaları</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>📌 Uç Noktalar (Endpoints)</h2>
+        <ul>
+          <li><strong>Günlük:</strong> <code>/api/gunluk/:burc_adi</code></li>
+          <li>
+            <strong>Haftalık:</strong> <code>/api/haftalik/:burc_adi</code>
+          </li>
+          <li><strong>Özellik:</strong> <code>/api/ozellik/:burc_adi</code></li>
+        </ul>
+        <p>
+          <strong>Not:</strong> <code>:burc_adi</code> yerine
+          <code>all</code> yazarsanız tüm burçlar için veri döner.
+        </p>
+      </section>
+
+      <section>
+        <h2>✨ Kullanılabilir Burçlar</h2>
+        <ul class="burc-listesi">
+          <li>koç</li>
+          <li>boğa</li>
+          <li>ikizler</li>
+          <li>yengeç</li>
+          <li>aslan</li>
+          <li>başak</li>
+          <li>terazi</li>
+          <li>akrep</li>
+          <li>yay</li>
+          <li>oğlak</li>
+          <li>kova</li>
+          <li>balık</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🧪 Örnek Kullanımlar</h2>
+        <ul>
+          <li>Günlük burç yorumu (Koç): <code>/api/gunluk/koc</code></li>
+          <li>
+            Haftalık burç yorumu (Aslan): <code>/api/haftalik/aslan</code>
+          </li>
+          <li>Burç özellikleri (Tümü): <code>/api/ozellik/all</code></li>
+        </ul>
+      </section>
+      <section>
+        <h2>❓ Sıkça Sorulan Sorular (SSS)</h2>
+        <div class="faq">
+          <div class="accordion-item">
+            <button class="accordion-btn">
+              🔹 Burç API yanıt formatı nedir?
+            </button>
+            <div class="accordion-content">
+              <p>
+                Yanıtlar JSON formatındadır. İçerikler burcun yorumuna veya
+                özelliklerine göre değişir.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn">
+              🔹 "all" parametresi ne işe yarar?
+            </button>
+            <div class="accordion-content">
+              <p>
+                <code>:burc_adi</code> yerine <code>all</code> yazıldığında tüm
+                burçlara ait veriler döner.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn">🔹 Burç API ücretsiz mi?</button>
+            <div class="accordion-content">
+              <p>Evet, Burç API tamamen ücretsizdir.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn">
+              🔹 Hangi saat dilimine göre günlük bilgiler veriliyor?
+            </button>
+            <div class="accordion-content">
+              <p>Veriler Türkiye saat dilimine (GMT+3) göre sunulmaktadır.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn">🔹 CORS aktif mi?</button>
+            <div class="accordion-content">
+              <p>
+                Evet, tarayıcıdan yapılacak isteklerde CORS desteği
+                bulunmaktadır.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Burç API. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
